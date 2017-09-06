@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>eux</artifactId>
+        <groupId>no.nav.eux</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	
+	<name>EESSI :: Nie-client</name>
+	<description>Creating a class that Rina might use to handle document- and casesvents</description>
+    <artifactId>rina-nie-client</artifactId>
+    <version>${project.parent.version}</version>
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+        <dependency>
+            <groupId>eu.ec.dgempl.nieclient</groupId>
+            <artifactId>nieclient-impl</artifactId>
+            <version>0.5.0</version>
+            <scope>system</scope>
+            <systemPath>C:/EESSI/BonitaBPM/webapps/bonita/WEB-INF/lib/nieClient-impl-0.5.0-SNAPSHOT-jar-with-dependencies.jar</systemPath>
+        </dependency>
+
+		<!-- test  -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        
+	</dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <!-- Deploy the jar-file by copying it to C:/EESSI/BonitaBPM/webapps/bonita/WEB-INF/lib -->
+        <!-- then restart the Bonita and Rinie -servers-->
+
+    </build>
+
+</project>
