@@ -13,9 +13,10 @@ import java.util.Map;
 /**
  * To use own implementation of the NieClient-interface in Rina do the following:
  * 1: Create a class that implements the NieClient-interface and build a jar-file.
- * 2:  Copy this file to the C:\EESSI\BonitaBPM\webapps\bonita\WEB-INF\lib folder.
- * 3: Stop and start the EESSI REST API and the EESSI BonitaBPM -services.
- * 4: Log in to the admin-module and in the 'NIE Settings'-tab alter the classname into the name of the implementation-class.
+ * 2.1: Stop the EESSI REST API and the EESSI BonitaBPM -services.
+ * 2.2: Copy the jar-file file to the C:\EESSI\BonitaBPM\webapps\bonita\WEB-INF\lib folder.
+ * 2.3: Start the EESSI REST API and the EESSI BonitaBPM -services.
+ * 3: Log in to the admin-module and in the 'NIE Settings'-tab alter the classname to the name of the implementation-class.
  * RINA should now use the the new implementation. Eventually see logs.
  */
 public class OurOwnNieClientImpl implements NieClient {
